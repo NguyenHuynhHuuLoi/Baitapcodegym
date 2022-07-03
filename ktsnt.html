@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = +prompt("Nhập 1 số bất kỳ: ");
+        function Ktsnt(so){
+            let kt= true;
+           if(n<2){
+            kt=flase;
+           }
+           else{
+            for(let i=2;i<so-1;i++){
+                if(so%i==0){
+                    kt=false;
+                    break;
+                }
+            }
+           }
+
+        if(kt==true){
+            alert("Đây là số nguyên tố");
+        }else{
+            alert("Đây không là số nguyên tố");
+        }
+        }
+        Ktsnt(n);
+            
+    </script>
+</body>
+</html>
